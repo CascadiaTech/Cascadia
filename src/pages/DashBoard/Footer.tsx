@@ -92,7 +92,7 @@ export default function FooterMenu() {
           >
             <a
               className={'four'}
-              href="https://www.CascadiaTech"
+              href="https://twitter.com/CascadiaFinance"
               target="_blank"
               rel="noreferrer"
               style={{ fontFamily: 'montserrat, sans-serif', fontSize: 'calc(3.5 * (0.25vw + 0.25vh))' }}

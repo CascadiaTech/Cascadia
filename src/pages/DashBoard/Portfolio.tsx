@@ -80,10 +80,10 @@ export default function PortfolioSection() {
             >
               React and Responsive Frontend Applications
             </h1>
-            We like designing novel applications, and smart contracts are our playground. If you click the link below
-            you can see our custom ERC20 staking contract which has been open sourced for founders and hobbyists to use
-            and learn. We use this contract to teach others how to make custom smart contracts. Think you have a novel
-            idea? reach out to us and lets talk about it!{' '}
+            We specialize in developing clean and professional Web3 applications. Our preferred development language is
+            React, a commonly used framework that will allow your application to scale with ease. Our team has years of
+            combined experience in developing Web3 React applications. Click the header above to view some examples of
+            our past work.{' '}
           </p>{' '}
         </div>
         <TransparentCard></TransparentCard>
@@ -110,10 +110,10 @@ export default function PortfolioSection() {
             >
               Solidity
             </h1>
-            We like designing novel applications, and smart contracts are our playground. If you click the link below
-            you can see our custom ERC20 staking contract which has been open sourced for founders and hobbyists to use
-            to learn. We use this contract to teach others how to make custom smart contracts. Think you have a novel
-            idea? reach out to us and lets talk about it!{' '}
+            We like designing novel applications, and smart contracts are our playground. If you click the header above
+            you can see our custom ERC20 staking contract which has been open sourced for founders and developers to use
+            and learn. We use this contract to teach others how to make custom smart contracts. Think you have a unique
+            idea? reach out to us and contact us!{' '}
           </p>{' '}
         </div>
         <TransparentCard></TransparentCard>
@@ -141,9 +141,9 @@ export default function PortfolioSection() {
               Design
             </h1>
             We have designers in house with experise in custom branding, and illustations to meet your projects needs!
-            Before we start to code we always get expert designs drafted so we know exactly what you want to see from
-            your application. Even if you are not sure if you want the app developed but want to see some preliminary
-            mockups reach out to us! Click The link below to see a PDF of one of our most recent designs.
+            Before we start to code we always get expert designs drafted so we will know exactly what you want to see
+            from your application. Even if you are not sure if you want the app developed but want to see some
+            preliminary mockups reach out to us! Click The header above to see a PDF of one of our most recent designs.
           </p>{' '}
         </div>
       </animated.div>
