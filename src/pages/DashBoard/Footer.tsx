@@ -45,14 +45,14 @@ export default function FooterMenu() {
         <img
           src={CascadiaTech}
           alt="logo"
-          style={{ paddingLeft: '8vw', marginLeft: '4vw', marginRight: '10vw', maxHeight: '18vw', height: '18vw' }}
+          style={{ paddingLeft: '7vw', marginLeft: '3vw', marginRight: '8vw', maxHeight: '18vw', height: '18vw' }}
         ></img>
-        <div style={{ textAlign: 'center', maxWidth: '13vw', width: '13vw', marginRight: '20vw' }}>
+        <div style={{ textAlign: 'center', maxWidth: '13vw', width: '13vw', marginRight: '18vw' }}>
           <p
             style={{
               color: '#ffffff',
               fontFamily: 'montserrat, sans-serif',
-              fontSize: 'calc(2 * (0.75vw + 0.75vh))',
+              fontSize: 'calc(2 * (0.7vw + 0.7vh))',
               fontWeight: 'bold',
             }}
           >
@@ -74,7 +74,7 @@ export default function FooterMenu() {
             style={{
               color: '#ffffff',
               fontFamily: 'montserrat, sans-serif',
-              fontSize: 'calc(2 * (0.75vw + 0.75vh))',
+              fontSize: 'calc(2 * (0.7vw + 0.7vh))',
               fontWeight: 'bold',
             }}
           >
@@ -86,7 +86,7 @@ export default function FooterMenu() {
               textAlign: 'left',
               maxWidth: '5vw',
               width: '5vw',
-              marginRight: '16vw',
+              marginRight: '18vw',
               lineHeight: 2,
             }}
           >
@@ -117,10 +117,10 @@ export default function FooterMenu() {
             >
               Github
             </a>
-            <div className={'footer-email'}>
-              <p style={{ color: '#ffffff' }}>hollowaycryptoconsulting@gmail.com</p>
-            </div>
           </div>
+          <p style={{ color: '#ffffff', fontSize: 'calc(3.5 * (0.15vw + 0.15vh))' }}>
+            hollowaycryptoconsulting@gmail.com
+          </p>
         </div>
       </div>
     </FooterBackground>

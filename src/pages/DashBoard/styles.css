@@ -73,17 +73,16 @@
   font-family: 'Montserrat, sans-serif';
   color: #ffffff;
   margin-top: 15px;
-  padding-top: 15px;
   padding-bottom: 25px;
   margin-right: 2.5vw;
   background-color: rgba(34, 34, 34, 0.904);
   border-color: rgba(2, 255, 183, 0.897);
   border-radius: 10px;
-  width: fit-content;
   padding-left: 5%;
   padding-right: 5%;
-  height: 8vh;
-  max-height: 8vh;
+  width: fit-content;
+  height: 4vh;
+  max-height: 4vh;
   transition: 1s;
 }
 .GitButton:hover {
@@ -104,7 +103,13 @@
   border-color: rgba(2, 255, 183, 0.897);
   border-radius: 10px;
   width: fit-content;
-  max-height: fit-content;
+  height: 4vh;
+  max-height: 4vh;
+  margin-top: 15px;
+  padding-bottom: 25px;
+  margin-right: 2.5vw;
+  padding-left: 3%;
+  padding-right: 3%;
   transition: 1s;
 }
 .QuoteButton:hover {
@@ -637,19 +642,11 @@ transition: 1s;
     flex-direction: row;
     text-align: center;
     justify-content: left;
-
-  
   }
 
 }
 
 @media only screen and (max-width: 550px) {
-  .footer-email {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 50vw;
-  }
 }
 
   a.header.uni:link {color:#ffffff;}

@@ -15,14 +15,14 @@ export default function PortfolioSection() {
   const ScrollY = useScrollPosition()
 
   const props = useSpring({
-    config: { delay: 3000, duration: 1000 },
+    config: { delay: 1000, duration: -2000 },
     to: { opacity: 1 },
     from: { opacity: 0 },
   })
 
   useEffect(() => {
     async function Ishidden() {
-      if (ScrollY < 200) {
+      if (ScrollY < 700) {
         return sethidden(true)
       } else {
         try {

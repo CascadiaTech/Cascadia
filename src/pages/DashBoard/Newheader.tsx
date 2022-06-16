@@ -13,13 +13,13 @@ import CascadiaTechFrontPic from '../../assets/images/CascadiaTechFrontPic.png'
 //padding: 8px 35px;
 
 const StyledHeaderText1 = styled.text`
-  font-size: calc(3 * (0.75vw + 0.75vh));
+  font-size: calc(3 * (0.85vw + 0.85vh));
   color: #ffffff;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
 `
 const StyledHeaderText2 = styled.text`
-  font-size: calc(3 * (0.75vw + 0.75vh));
+  font-size: calc(3 * (0.85vw + 0.85vh));
   color: #09008a;
   font-weight: bold;
   text-shadow: 0px 0px 4px #ccceff;
