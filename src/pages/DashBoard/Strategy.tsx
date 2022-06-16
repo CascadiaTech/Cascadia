@@ -35,7 +35,7 @@ const StratSection = () => {
 
   useEffect(() => {
     async function Ishidden() {
-      if (ScrollY < 60) {
+      if (ScrollY < 50) {
         return sethidden(true)
       } else {
         try {

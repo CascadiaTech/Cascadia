@@ -636,6 +636,10 @@ transition: 1s;
     height: 0vh;
     width: 0vw;
   }
+  .header-space {
+    height: 22vh;
+    width: 2vw;
+  }
   
   .flexbox-vertical-container-left { 
     display: flex;

@@ -22,7 +22,7 @@ export default function PortfolioSection() {
 
   useEffect(() => {
     async function Ishidden() {
-      if (ScrollY < 700) {
+      if (ScrollY < 450) {
         return sethidden(true)
       } else {
         try {
