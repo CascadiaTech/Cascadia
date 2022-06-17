@@ -68,11 +68,11 @@ const StratSection = () => {
               color: '#ffffff',
             }}
           >
-            Our team has combined experience in taking applications from idea to a finished masterpiece. From designing
-            the intial concept, to deploying to your production environment we have done it. Our specialization is in
-            Web3 projects, our prefreed front-end language ReactJS is used throughout the industry so your app can
-            scale. We also pride ourselves on wirting innovative smart contracts to suit your unique business idea.
-            Check out examples of our past work below!
+            Our team has experience in taking applications from idea to a finished masterpiece. From designing the
+            intial concept, to deploying to your production environment we have done it. Our specialization is in Web3
+            projects, our preferred frontend language ReactJS is used throughout the industry so your app can scale. We
+            also pride ourselves on wirting innovative smart contracts to suit your unique business idea. Check out
+            examples of our past work!
           </p>
           <p></p>
           <div className={'flexbox-container'} style={{ justifyContent: 'center' }}>

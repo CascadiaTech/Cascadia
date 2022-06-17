@@ -78,7 +78,7 @@ export default function PortfolioSection() {
                 fontSize: 'calc(3 * (0.5vw + 0.5vh))',
               }}
             >
-              React and Responsive Frontend Applications
+              Scalable front-end Applcations
             </h1>
             We specialize in developing clean and professional Web3 applications. Our preferred development language is
             React, a commonly used framework that will allow your application to scale with ease. Our team has years of
@@ -108,12 +108,12 @@ export default function PortfolioSection() {
                 fontSize: 'calc(3 * (0.5vw + 0.5vh))',
               }}
             >
-              Solidity
+              Smart Contracts
             </h1>
-            We like designing novel applications, and smart contracts are our playground. If you click the header above
-            you can see our custom ERC20 staking contract which has been open sourced for founders and developers to use
-            and learn. We use this contract to teach others how to make custom smart contracts. Think you have a unique
-            idea? reach out to us and contact us!{' '}
+            We enjoy the challenge of designing novel applications, and smart contracts are our playground. If you click
+            the header above you can see our custom ERC20 staking contract which has been open sourced for founders and
+            developers to use and learn. We use this contract to teach others how to make custom smart contracts. Think
+            you have a unique idea? reach out to us and contact us!{' '}
           </p>{' '}
         </div>
         <TransparentCard></TransparentCard>
@@ -129,21 +129,24 @@ export default function PortfolioSection() {
             }}
           >
             <img className={'imgport3'} src={DesignDevPic} alt="remix" />
-            <h1
-              className={'imgButton'}
-              onClick={() => window.open('https://xd.adobe.com/view/a2a713e4-c50b-4ab4-92a0-08ad918255c7-f7f4/')}
-              style={{
-                textDecoration: 'underline solid 2px',
-                fontFamily: 'montserrat, sans-serif',
-                fontSize: 'calc(3 * (0.5vw + 0.5vh))',
-              }}
-            >
-              Design
-            </h1>
-            We have designers in house with experise in custom branding, and illustations to meet your projects needs!
-            Before we start to code we always get expert designs drafted so we will know exactly what you want to see
-            from your application. Even if you are not sure if you want the app developed but want to see some
-            preliminary mockups reach out to us! Click The header above to see a PDF of one of our most recent designs.
+            <div style={{ paddingRight: '50px' }}>
+              <h1
+                className={'imgButton'}
+                onClick={() => window.open('https://xd.adobe.com/view/a2a713e4-c50b-4ab4-92a0-08ad918255c7-f7f4/')}
+                style={{
+                  textDecoration: 'underline solid 2px',
+                  fontFamily: 'montserrat, sans-serif',
+                  fontSize: 'calc(3 * (0.5vw + 0.5vh))',
+                }}
+              >
+                Design
+              </h1>
+              We have designers in house with experise in custom branding, and illustations to meet your projects needs!
+              Before we start to code we always get expert designs drafted so we will know exactly what you want to see
+              from your application. Even if you are not sure if you want the app developed but want to see some
+              preliminary mockups reach out to us! Click The header above to see a PDF of one of our most recent
+              designs.
+            </div>
           </p>{' '}
         </div>
       </animated.div>
