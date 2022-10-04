@@ -18,6 +18,18 @@
     font-weight: 700;
   }
 
+  .PortfolioLinks{
+    color: #fcfcfc;
+    font-size: calc(3 * (0.4vw + 0.4vh));
+    font-weight: 600;
+  }
+  .PortfolioLinks:hover{
+    color: #e6e6e6;
+    font-weight: 650;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 .HoverCard {
 padding: 0px 0px;
 height: 20vh;
@@ -26,6 +38,7 @@ border-style: solid;
 border-width: 2px;
 background-color: rgba(34, 34, 34, 0.904);
 border-color: rgba(2, 255, 183, 0.897);
+box-shadow: 0px 0px 18px 5px rgba(0, 195, 159, 0.61), 0px 0px 5px 5px rgba(0, 195, 185, 0.858), 0px 0px 5px 5px rgba(0, 153, 195, 0.18);
 border-radius: 10px;
   max-width: 22vw;
   min-width: 5vw;
@@ -60,24 +73,22 @@ transition: 1s;
   padding: 0px 0px;
   height: fit-content;
   background-color: #000000be;
-  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px #ffffff, inset 4px 4px 15px 0px #ffffff, 2px 2px 7px 5px rgba(255, 255, 255, 0.34);
   border-radius: 10px;
   font-size: 'calc(3 * (0.25vw + 0.25vh))';
   width: 25vw;
   max-width: 25vw;
-  min-width: 300px;
-  min-height: 250px;
+  min-width: 250px;
+  min-height: 200px;
   margin-right: 2vw;
   justify-content: 'left';
   transition: 1s;
-  border-color: #000000; 
+  border-color: #ffffff; 
   border-width: 1px;
   
   }
   .RoadmapHoverCard:hover {
-    transform: scale(1.03);
     transition: 0.5s;
-    border-width: 5px;
     border-color: rgba(255, 153, 0, 0.979); 
     }
 

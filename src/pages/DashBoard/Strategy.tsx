@@ -58,19 +58,24 @@ const StratSection = () => {
           <p></p>
           <p
             style={{
-              maxWidth: '70vw',
               textShadow: '0px 1px 0px rgba(0, 0, 0, 0.2)',
-              fontSize: '15px',
+              fontSize: 'calc(3 * (0.4vw + 0.4vh))',
               textAlign: 'center',
+              lineHeight: 1.4,
+              fontWeight: 550,
               justifyContent: 'center',
-              fontFamily: 'Lato, Sans-serif',
+              marginLeft: '2vw',
+              marginRight: '2vw',
+              paddingLeft: '2vw',
+              paddingRight: '2vw',
+              fontFamily: 'montserrat, sans-serif',
               marginBottom: '20px',
               color: '#ffffff',
             }}
           >
             Our team has combined experience in taking applications from idea to a finished masterpiece. From designing
             the intial concept, to deploying to your production environment we have done it. Our specialization is in
-            Web3 projects, our prefreed front-end language ReactJS is used throughout the industry so your app can
+            Web3 projects, our preferred front-end language ReactJS is used throughout the industry so your app can
             scale. We also pride ourselves on wirting innovative smart contracts to suit your unique business idea.
             Check out examples of our past work below!
           </p>
@@ -90,9 +95,9 @@ const StratSection = () => {
                 }}
               >
                 <img className={'card-icon'} alt="icon" src={Card_ChartIcon}></img>
-                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>React</h1>
+                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Frontend</h1>
                 <p style={{ color: '#ffffff', fontSize: 'calc(3 * (0.25vw + 0.25vh))' }}>
-                  We specialize in making responsive web applications{' '}
+                  Typescript and CSS for Frontend programming{' '}
                 </p>
                 <img style={{ paddingBottom: '7vh' }} className={'img-size'} src={Line_pic} alt="line"></img>
               </PurpleCard>
@@ -111,10 +116,10 @@ const StratSection = () => {
                 }}
               >
                 <img className={'card-icon'} alt="icon" src={Card_BubbleIcon}></img>
-                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Solidity</h1>
+                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Backend</h1>
                 <p style={{ color: '#ffffff', fontSize: 'calc(3 * (0.25vw + 0.25vh))' }}>
                   {' '}
-                  We offer services in Solidy Smart-Contract development
+                  Python and Javascript programming for database connection
                 </p>
                 <img style={{ paddingBottom: '7vh' }} className={'img-size'} src={Line_pic} alt="line"></img>
               </PurpleCard>
@@ -133,9 +138,10 @@ const StratSection = () => {
                 }}
               >
                 <img className={'card-icon'} alt="icon" src={Card_GraphIcon}></img>
-                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Design</h1>
+                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Smart Contracts</h1>
                 <p style={{ color: '#ffffff', fontSize: 'calc(3 * (0.25vw + 0.25vh))' }}>
-                  We have all of your project design needs covered!
+                  Our team has been trained in Solidity for writing Smart-Contracts to be used with Frontend
+                  Applications
                 </p>
                 <img style={{ paddingBottom: '7vh' }} className={'img-size'} src={Line_pic} alt="line"></img>
               </PurpleCard>

@@ -99,7 +99,7 @@ const AboutSection = () => {
                                 paddingRight: '2vw',
                               }}
                             >
-                              Community <br /> based
+                              Canadian <br /> Owned
                             </h1>
                           </div>
                           <div className={'flexbox-vertical-container'}>
@@ -119,7 +119,7 @@ const AboutSection = () => {
                                 paddingRight: '2vw',
                               }}
                             >
-                              No Team <br /> Tokens
+                              Full-Stack <br /> Development
                             </h1>
                           </div>
                           <div className={'flexbox-vertical-container'}>

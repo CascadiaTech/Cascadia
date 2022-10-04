@@ -47,7 +47,12 @@ const RoadmapSection = () => {
                     {' '}
                     <p></p>
                     <div className={'flexbox-vertical-container'} style={{ justifyContent: 'center' }}>
-                      <h1 style={{ fontSize: 'calc(3 * (0.8vw + 0.8vh))' }} className={'Animeverseblackheadertext'}>
+                      <h1
+                        style={{
+                          fontSize: 'calc(3 * (0.8vw + 0.8vh))',
+                          color: '#ffffff',
+                        }}
+                      >
                         Portfolio
                       </h1>
                     </div>
@@ -64,7 +69,14 @@ const RoadmapSection = () => {
                               marginBottom: '4vh',
                             }}
                           >
-                            <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>AnimeVerse</h1>
+                            <p
+                              onClick={() =>
+                                window.open('https://anime-verse-livid.vercel.app/#/DashBoard?chain=mainnet')
+                              }
+                              className={'PortfolioLinks'}
+                            >
+                              AnimeVerse
+                            </p>
                           </div>
                         </div>
 
@@ -77,13 +89,13 @@ const RoadmapSection = () => {
                               paddingLeft: '1vw',
                             }}
                           >
-                            <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>
+                            <p
+                              onClick={() =>
+                                window.open('https://ape-motor-cycle-club.vercel.app/#/Dapp?chain=mainnet')
+                              }
+                              className={'PortfolioLinks'}
+                            >
                               ApeMotorcycleClub
-                            </h1>
-                            <p style={{ maxWidth: '20vw', color: '#FFFFFF', textAlign: 'left', lineHeight: 1.4 }}>
-                              •&nbsp;AnimeVerse theme song
-                              <br />
-                              •&nbsp;Token Staking
                             </p>
                           </div>
                         </div>
@@ -100,9 +112,12 @@ const RoadmapSection = () => {
                               marginBottom: '4vh',
                             }}
                           >
-                            <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>
+                            <p
+                              onClick={() => window.open('https://github.com/CascadiaTech/StakingContract')}
+                              className={'PortfolioLinks'}
+                            >
                               Staking Contract
-                            </h1>
+                            </p>
                           </div>
                         </div>
 
@@ -115,9 +130,14 @@ const RoadmapSection = () => {
                               paddingLeft: '1vw',
                             }}
                           >
-                            <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>
-                              Backend application
-                            </h1>
+                            <p
+                              onClick={() =>
+                                window.open('https://github.com/CascadiaTech/Backend-App-for-UserInformation')
+                              }
+                              className={'PortfolioLinks'}
+                            >
+                              Backend Application
+                            </p>
                           </div>
                         </div>
                       </div>
