@@ -44,6 +44,22 @@ export const PurpleCard = styled(Card)`
   border-color: rgba(2, 255, 183, 0.897);
   border-radius: 10px;
 `
+export const FormCard = styled(Card)`
+  background-color: rgba(34, 34, 34, 0.904);
+  border: 2px;
+  border-style: solid;
+  border-color: #000000;
+  transform: translate(0%, -2%);
+  margin-left: 2vw;
+  margin-right: 2vw;
+  max-width: 96vw;
+  width: 96vw;
+  min-height: 6vh;
+  max-height: fit-content;
+  border-radius: 10px;
+  text-align: center;
+  transition: 1s;
+`
 export const BuyBackCard = styled(Card)`
   background-color: #371065;
   max-width: 700px;
