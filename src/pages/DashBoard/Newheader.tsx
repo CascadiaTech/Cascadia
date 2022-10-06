@@ -9,7 +9,7 @@ import { useSpring } from 'react-spring/web'
 import styled from 'styled-components/macro'
 
 import CascadiaTechFrontPic from '../../assets/images/CascadiaTechFrontPic.png'
-
+import CarouselSlider from '../../components/CarouselSlider/Carsousel'
 //padding: 8px 35px;
 
 const StyledHeaderText1 = styled.text`
@@ -57,6 +57,7 @@ const Headernew = () => {
     <>
       <div className={'mobileheader'}>
         <animated.div hidden={hidden} style={props} className={'animate__animated animate__bounce'}>
+          <CarouselSlider></CarouselSlider>
           <div className={'flexbox-container'}>
             <div style={{ justifyContent: 'right' }}>
               <img

@@ -3,6 +3,7 @@ import 'animate.css'
 
 //const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 import useScrollPosition from '@react-hook/window-scroll'
+import DualCardComponent from 'components/DualCards/DualCardComponent'
 import React, { useEffect, useState } from 'react'
 import { animated, useTransition } from 'react-spring'
 
@@ -145,6 +146,7 @@ const AboutSection = () => {
                       </div>
                     </div>
                   </div>
+                  <DualCardComponent></DualCardComponent>
                 </animated.div>
               )
           )}
