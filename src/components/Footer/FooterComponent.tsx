@@ -7,7 +7,6 @@ import useScrollPosition from '@react-hook/window-scroll'
 import React, { useEffect, useState } from 'react'
 import { animated, useTransition } from 'react-spring'
 import Swal from 'sweetalert2'
-
 export default function FooterComponent() {
   const [hidden, sethidden] = useState(true)
   const ScrollY = useScrollPosition()
@@ -66,7 +65,6 @@ export default function FooterComponent() {
 
   return (
     <div>
-      <div className="desktop:bg-blue lg:bg-green grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"> hello</div>
       {!hidden ? (
         <div>
           {transitions.map(
@@ -275,7 +273,7 @@ export default function FooterComponent() {
                                       type="submit"
                                       className="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                                     >
-                                      Subscribe
+                                      Contact us
                                     </button>
                                   </div>
                                 </div>
@@ -284,39 +282,10 @@ export default function FooterComponent() {
 
                             <div className="mb-6">
                               <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat
-                                quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum
-                                corrupti dicta, aliquam sequi voluptate quas.
+                                Use The contact form above if you have questions about our company or services, our
+                                portfolio and social profiles can be reached by clicking the icons above, thank you for
+                                viewing our site.
                               </p>
-                            </div>
-
-                            <div className="grid lg:grid-cols-4 md:grid-cols-2">
-                              <div className="mb-6">
-                                <h5 className="uppercase font-bold mb-2.5">Links</h5>
-
-                                <ul className="list-none mb-0">
-                                  <li>
-                                    <a href="#!" className="text-white">
-                                      Link 1
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#!" className="text-white">
-                                      Link 2
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#!" className="text-white">
-                                      Link 3
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#!" className="text-white">
-                                      Link 4
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
                             </div>
                           </div>
 

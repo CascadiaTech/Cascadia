@@ -24,18 +24,18 @@ const StyledHeader = styled.text`
 `
 
 const StratSection = () => {
-  const [hidden, sethidden] = useState(false)
+  const [hidden, sethidden] = useState(true)
   const ScrollY = useScrollPosition()
 
   const props = useSpring({
-    config: { delay: 1000, duration: 1000 },
+    config: { delay: 2000, duration: 1000 },
     to: { opacity: 1 },
     from: { opacity: 0 },
   })
 
   useEffect(() => {
     async function Ishidden() {
-      if (ScrollY < 25) {
+      if (ScrollY < 500) {
         return sethidden(true)
       } else {
         try {

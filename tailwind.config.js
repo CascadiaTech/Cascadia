@@ -14,5 +14,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('tw-elements/dist/plugin')],
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  plugins: [require('tw-elements/dist/plugin'), require('tailwindcss-elevation')(['responsive'])], // typescript-elsint no var requires
 }

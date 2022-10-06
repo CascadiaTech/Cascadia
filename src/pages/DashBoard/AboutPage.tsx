@@ -3,24 +3,22 @@ import 'animate.css'
 
 //const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 import useScrollPosition from '@react-hook/window-scroll'
-import DualCardComponent from 'components/DualCards/DualCardComponent'
 import React, { useEffect, useState } from 'react'
-import { animated, useTransition } from 'react-spring'
-
+import { animated } from 'react-spring'
+import { useSpring } from 'react-spring/web'
 const AboutSection = () => {
   const [hidden, sethidden] = useState(true)
   const ScrollY = useScrollPosition()
 
-  const transitions = useTransition(!hidden, null, {
+  const props = useSpring({
+    config: { delay: 3000, duration: 1000 },
+    to: { opacity: 1 },
     from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-    config: { duration: 1000, delay: 1000 },
   })
 
   useEffect(() => {
     async function Ishidden() {
-      if (ScrollY < 200) {
+      if (ScrollY < 605) {
         return sethidden(true)
       } else {
         try {
@@ -35,61 +33,49 @@ const AboutSection = () => {
   }, [ScrollY])
   return (
     <div>
-      {!hidden ? (
-        <div>
-          {transitions.map(
-            ({ item, key, props }) =>
-              item && (
-                <animated.div style={props} key={key}>
-                  <div className={'animate__animated animate__animate__fadeInDown'}>
-                    <div style={{ marginTop: '5vh' }}></div>
-                    <div className={'flexbox-vertical-container-max-width'}>
-                      <div className={'contentcenter'}>
-                        {' '}
-                        <h1 style={{ fontSize: 'calc(3 * (0.8vw + 0.8vh))' }} className={'whitetext'}>
-                          {' '}
-                          About Us{' '}
-                        </h1>
-                        <p></p>
-                        <p></p>
-                        <div className={'AboutUs-card'}>
-                          <p
-                            style={{
-                              textShadow: '0px 1px 0px rgba(0, 0, 0, 0.2)',
-                              fontSize: 'calc(3 * (0.4vw + 0.4vh))',
-                              textAlign: 'center',
-                              lineHeight: 1.4,
-                              fontWeight: 550,
-                              justifyContent: 'center',
-                              marginLeft: '2vw',
-                              marginRight: '2vw',
-                              paddingLeft: '2vw',
-                              paddingRight: '2vw',
-                              fontFamily: 'montserrat, sans-serif',
-                              marginBottom: '20px',
-                              color: '#ffffff',
-                            }}
-                          >
-                            AnimeVerse ($ANIME) is an ERC20 token built on the Ethereum (ETH) blockchain. AnimeVerse is
-                            tradable via the token itself or by our unique original NFT collection. Our Eco-System is
-                            designed to be a crypto asset that rewards investors in ETH for simply holding $ANIME
-                            tokens. The AnimeVerse website has a Dashboard that will enable investors to claim their ETH
-                            rewards, mint AnimeVerse NFTs and stake $ANIME tokens including NFTs for additional token
-                            rewards yielding passive income.
-                          </p>
-                        </div>
-                        <p></p>
-                        <DualCardComponent></DualCardComponent>
-                      </div>
-                    </div>
-                  </div>
-                </animated.div>
-              )
-          )}
+      <animated.div hidden={hidden} style={props} className={'animate__animated animate__fadeInUp'}>
+        <div style={{ marginTop: '5vh' }}></div>
+        <div className={'flexbox-vertical-container-max-width'}>
+          <div className={'contentcenter'}>
+            {' '}
+            <h1 style={{ fontSize: 'calc(3 * (0.8vw + 0.8vh))' }} className={'whitetext'}>
+              {' '}
+              About Us{' '}
+            </h1>
+            <p></p>
+            <p></p>
+            <div className={'AboutUs-card'}>
+              <p
+                style={{
+                  textShadow: '0px 1px 0px rgba(0, 0, 0, 0.2)',
+                  fontSize: 'calc(3 * (0.4vw + 0.4vh))',
+                  textAlign: 'center',
+                  lineHeight: 1.4,
+                  fontWeight: 550,
+                  justifyContent: 'center',
+                  marginLeft: '2vw',
+                  marginRight: '2vw',
+                  paddingLeft: '2vw',
+                  paddingRight: '2vw',
+                  fontFamily: 'montserrat, sans-serif',
+                  marginBottom: '20px',
+                  color: '#ffffff',
+                }}
+              >
+                What started as a passion for web3 and solving problems has turned into an international team of
+                developers seeking to create the next future of finance and consumer spending. We are a team who love to
+                solve hard problems, and to stretch the bounds of what can be done. Web3 is changing the shape of the
+                internet, there is a change in the air of how consumers will spend their money. Consumers spend money to
+                enforce our identities, be it donate to a charity, or buy a baseball jersey these items are purchased to
+                reenforce to ourselves of who we are. With our world becoming increasingly digital, so are our
+                identities. We see NFTs and web3 as a reaction to that. A once in a lifetime oportunity to capitalize on
+                the future is upon us, let us help you capitalize on it like we are.
+              </p>
+            </div>
+            <p></p>
+          </div>
         </div>
-      ) : (
-        <></>
-      )}
+      </animated.div>
     </div>
   )
 }
