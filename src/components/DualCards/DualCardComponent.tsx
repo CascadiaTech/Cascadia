@@ -6,7 +6,7 @@ export default function DualCardComponent() {
   return (
     <>
       <div className="flex space-y-8 justify-center flex-col ...">
-        <div className="flex space-x-4 justify-between flex-row ...">
+        <div className="flex space-x-4 justify-between flex-col md:flex-row ...">
           <div className="flex justify-center">
             <div className="rounded-lg shadow-lg bg-white max-w-sm">
               <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
