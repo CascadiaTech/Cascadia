@@ -79,74 +79,10 @@ const AboutSection = () => {
                           </p>
                         </div>
                         <p></p>
-                      </div>
-                    </div>
-                    <div className={'flexbox-vertical-container-max-width'}>
-                      <div className={'contentcenter'}>
-                        <div className={'flexbox-container'} style={{ justifyContent: 'center' }}>
-                          <div className={'flexbox-vertical-container'}>
-                            <div
-                              className={'HoverCard'}
-                              style={{
-                                marginRight: '2vw',
-                                marginTop: 10,
-                              }}
-                            ></div>
-                            <h1
-                              style={{
-                                lineHeight: '0.9',
-                                color: '#ffffff',
-                                fontSize: 'calc(3 * (0.3vw + 0.3vh))',
-                                paddingRight: '2vw',
-                              }}
-                            >
-                              Canadian <br /> Owned
-                            </h1>
-                          </div>
-                          <div className={'flexbox-vertical-container'}>
-                            <div
-                              className={'HoverCard'}
-                              style={{
-                                marginRight: '2vw',
-                                marginTop: 10,
-                              }}
-                            ></div>
-                            <h1
-                              style={{
-                                color: '#ffffff',
-                                fontSize: 'calc(3 * (0.3vw + 0.3vh))',
-                                textAlign: 'center',
-                                lineHeight: '0.9',
-                                paddingRight: '2vw',
-                              }}
-                            >
-                              Full-Stack <br /> Development
-                            </h1>
-                          </div>
-                          <div className={'flexbox-vertical-container'}>
-                            <div
-                              className={'HoverCard'}
-                              style={{
-                                marginTop: 10,
-                              }}
-                            ></div>
-                            <h1
-                              style={{
-                                fontSize: 'calc(3 * (0.3vw + 0.3vh))',
-                                textAlign: 'center',
-                                color: '#ffffff',
-                                lineHeight: '0.9',
-                                paddingRight: '3vw',
-                              }}
-                            >
-                              KYC <br /> & Audit
-                            </h1>
-                          </div>
-                        </div>
+                        <DualCardComponent></DualCardComponent>
                       </div>
                     </div>
                   </div>
-                  <DualCardComponent></DualCardComponent>
                 </animated.div>
               )
           )}
