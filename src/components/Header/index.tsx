@@ -72,7 +72,7 @@ const HeaderElement = styled.div`
 
 const HeaderLinks = styled(Row)`
   justify-self: center;
-  background-color: rgba(34, 34, 34, 0.904);
+  background-color: transparent;
   width: 100vw;
   max-width: 100vw;
   padding: 15px;
