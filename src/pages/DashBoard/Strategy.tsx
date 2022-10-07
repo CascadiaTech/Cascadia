@@ -1,6 +1,7 @@
 import './styles.css'
 import 'animate.css'
 import 'tailwindcss-elevation'
+import '../../index.css'
 
 //const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 import useScrollPosition from '@react-hook/window-scroll'
@@ -12,10 +13,10 @@ import styled from 'styled-components/macro'
 import citysunset from '../../assets/images/citysunset.jpeg'
 
 const StyledHeader = styled.text`
-  font-size: calc(3 * (0.75vw + 0.75vh));
+  fontSize: 'calc(3 * (0.75vw + 0.75vh))'
   color: #ffffff;
   justify-content: center;
-  font-family: Montserrat, sans-serif;
+  fontFamily: 'Montserrat, sans-serif'
   font-weight: bold;
   text-align: center;
 `
@@ -48,7 +49,9 @@ const StratSection = () => {
   return (
     <animated.div hidden={hidden} style={props} className={'animate__animated animate__fadeInUp'}>
       {' '}
-      <StyledHeader>Our Services</StyledHeader>
+      <div className="flex-row w-screen text-center justify-center">
+        <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'calc(3 * (0.75vw + 0.75vh))' }}>Our Services</h1>
+      </div>
       <p></p>
       <p></p>
       <p

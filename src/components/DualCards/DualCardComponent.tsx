@@ -13,14 +13,14 @@ export default function DualCardComponent() {
   const ScrollY = useScrollPosition()
 
   const props = useSpring({
-    config: { delay: 1000, duration: 1000 },
+    config: { delay: 4000, duration: 1000 },
     to: { opacity: 1 },
     from: { opacity: 0 },
   })
 
   useEffect(() => {
     async function Ishidden() {
-      if (ScrollY < 45) {
+      if (ScrollY < 700) {
         return sethidden(true)
       } else {
         try {
@@ -102,10 +102,17 @@ export default function DualCardComponent() {
               </div>
             </div>
           </div>
-          <h1 style={{ marginTop: '10px', fontSize: 'calc(3 * (0.8vw + 0.8vh))' }} className={'whitetext'}>
-            {' '}
-            FAQ{' '}
-          </h1>
+          <div className="flex-row w-screen text-center justify-center">
+            <h1
+              style={{
+                marginTop: '10px',
+                fontFamily: 'Montserrat, sans-serif',
+                fontSize: 'calc(3 * (0.75vw + 0.75vh))',
+              }}
+            >
+              FAQ
+            </h1>
+          </div>
           <div className="accordion" id="accordionExample">
             <div className="accordion-item bg-grey border border-white-200">
               <h2 className="accordion-header mb-0" id="headingOne">
