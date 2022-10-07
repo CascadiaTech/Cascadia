@@ -1,18 +1,16 @@
 import './styles.css'
 import 'animate.css'
+import 'tailwindcss-elevation'
 
 //const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 import useScrollPosition from '@react-hook/window-scroll'
-import { PurpleCard } from 'components/Card'
 import React, { useEffect, useState } from 'react'
 import { animated } from 'react-spring'
 import { useSpring } from 'react-spring/web'
 import styled from 'styled-components/macro'
 
-import Card_BubbleIcon from '../../assets/images/Card_BubbleIcon.png'
-import Card_ChartIcon from '../../assets/images/Card_ChartIcon.png'
-import Card_GraphIcon from '../../assets/images/Card_GraphIcon.png'
-import Line_pic from '../../assets/images/Line_pic.png'
+import citysunset from '../../assets/images/citysunset.jpeg'
+
 const StyledHeader = styled.text`
   font-size: calc(3 * (0.75vw + 0.75vh));
   color: #ffffff;
@@ -20,7 +18,6 @@ const StyledHeader = styled.text`
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   text-align: center;
-  padding-top: 4vh;
 `
 
 const StratSection = () => {
@@ -50,102 +47,75 @@ const StratSection = () => {
   }, [ScrollY])
   return (
     <animated.div hidden={hidden} style={props} className={'animate__animated animate__fadeInUp'}>
-      <div className={'flexbox-vertical-container-max-width'}>
-        <div className={'contentcenter'}>
-          {' '}
-          <StyledHeader>Our Services</StyledHeader>
-          <p></p>
-          <p></p>
-          <p
-            style={{
-              textShadow: '0px 1px 0px rgba(0, 0, 0, 0.2)',
-              fontSize: 'calc(3 * (0.4vw + 0.4vh))',
-              textAlign: 'center',
-              lineHeight: 1.4,
-              fontWeight: 550,
-              justifyContent: 'center',
-              marginLeft: '2vw',
-              marginRight: '2vw',
-              paddingLeft: '2vw',
-              paddingRight: '2vw',
-              fontFamily: 'montserrat, sans-serif',
-              marginBottom: '20px',
-              color: '#ffffff',
-            }}
-          >
-            Our team has combined experience in taking applications from idea to a finished masterpiece. From designing
-            the intial concept, to deploying to your production environment we have done it. Our specialization is in
-            Web3 projects, our preferred front-end language ReactJS is used throughout the industry so your app can
-            scale. We also pride ourselves on wirting innovative smart contracts to suit your unique business idea.
-            Check out examples of our past work below!
-          </p>
-          <p></p>
-          <div className={'flexbox-container'} style={{ justifyContent: 'center' }}>
-            <div className={'flexbox-vertical-container'}>
-              <PurpleCard
-                className={'HoverCard'}
-                style={{
-                  maxWidth: '20vw',
-                  minWidth: '5vw',
-                  maxHeight: '30vh',
-                  width: '20vw',
-                  marginRight: '2vw',
-                  height: '30vh',
-                  marginTop: 20,
-                }}
-              >
-                <img className={'card-icon'} alt="icon" src={Card_ChartIcon}></img>
-                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Frontend</h1>
-                <p style={{ color: '#ffffff', fontSize: 'calc(3 * (0.25vw + 0.25vh))' }}>
-                  Typescript and CSS for Frontend programming{' '}
-                </p>
-                <img style={{ paddingBottom: '7vh' }} className={'img-size'} src={Line_pic} alt="line"></img>
-              </PurpleCard>
+      {' '}
+      <StyledHeader>Our Services</StyledHeader>
+      <p></p>
+      <p></p>
+      <p
+        style={{
+          textShadow: '0px 1px 0px rgba(0, 0, 0, 0.2)',
+          fontSize: 'calc(3 * (0.4vw + 0.4vh))',
+          textAlign: 'center',
+          lineHeight: 1.4,
+          fontWeight: 550,
+          justifyContent: 'center',
+          marginLeft: '2vw',
+          marginRight: '2vw',
+          paddingLeft: '2vw',
+          paddingRight: '2vw',
+          fontFamily: 'montserrat, sans-serif',
+          marginBottom: '20px',
+          color: '#ffffff',
+        }}
+      >
+        Our team has combined experience in taking applications from idea to a finished masterpiece. From designing the
+        intial concept, to deploying to your production environment we have done it. Our specialization is in Web3
+        projects, our preferred front-end language ReactJS is used throughout the industry so your app can scale. We
+        also pride ourselves on wirting innovative smart contracts to suit your unique business idea. Check out examples
+        of our past work below!
+      </p>
+      <p></p>
+      <div className="container my-24 px-6 mx-auto"></div>
+      <div className="mb-32 text-gray-800 text-center lg:text-left"></div>
+      <div className="container mx-auto xl:px-32 text-center lg:text-left">
+        <div className="grid lg:grid-cols-2 flex items-center">
+          <div className="mb-12 lg:mb-0">
+            <div
+              className=" elevation-15 relative block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 z-1"
+              style={{ backgroundColor: 'hsla(0, 0%, 100%, 0.55)', backdropFilter: 'blur(30px)' }}
+            >
+              <h2 className="text-3xl font-bold mb-4 display-5">Why us?</h2>
+              <p className="text-black mb-12">
+                We work very hard to earn our clients respect and show the world what limits we can push. If you want
+                driven and smart people in your corner, you want us on your team.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-x-6">
+                <div className="mb-12 md:mb-0">
+                  <h2 className="text-3xl font-bold text-dark mb-4">Frontend</h2>
+                  <h5 className="text-lg font-medium text-gray-500 mb-0">React.js</h5>
+                </div>
+
+                <div className="mb-12 md:mb-0">
+                  <h2 className="text-3xl font-bold text-dark mb-4">Backend</h2>
+                  <h5 className="text-lg font-medium text-gray-500 mb-0">Node.js or Python</h5>
+                </div>
+
+                <div className="">
+                  <h2 className="text-3xl font-bold text-dark mb-4">Smart Contracts</h2>
+                  <h5 className="text-lg font-medium text-gray-500 mb-0">Solidity</h5>
+                </div>
+              </div>
             </div>
-            <div className={'flexbox-vertical-container'}>
-              <PurpleCard
-                className={'HoverCard'}
-                style={{
-                  maxWidth: '20vw',
-                  minWidth: '5vw',
-                  maxHeight: '30vh',
-                  width: '20vw',
-                  height: '30vh',
-                  marginTop: 20,
-                  marginRight: '2vw',
-                }}
-              >
-                <img className={'card-icon'} alt="icon" src={Card_BubbleIcon}></img>
-                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Backend</h1>
-                <p style={{ color: '#ffffff', fontSize: 'calc(3 * (0.25vw + 0.25vh))' }}>
-                  {' '}
-                  Python and Javascript programming for database connection
-                </p>
-                <img style={{ paddingBottom: '7vh' }} className={'img-size'} src={Line_pic} alt="line"></img>
-              </PurpleCard>
-            </div>
-            <div className={'flexbox-vertical-container'}>
-              <PurpleCard
-                className={'HoverCard'}
-                style={{
-                  maxWidth: '20vw',
-                  minWidth: '5vw',
-                  maxHeight: '30vh',
-                  width: '20vw',
-                  marginRight: '2vw',
-                  height: '30vh',
-                  marginTop: 20,
-                }}
-              >
-                <img className={'card-icon'} alt="icon" src={Card_GraphIcon}></img>
-                <h1 style={{ color: '#ffffff', fontSize: 'calc(3 * (0.3vw + 0.3vh))' }}>Smart Contracts</h1>
-                <p style={{ color: '#ffffff', fontSize: 'calc(3 * (0.25vw + 0.25vh))' }}>
-                  Our team has been trained in Solidity for writing Smart-Contracts to be used with Frontend
-                  Applications
-                </p>
-                <img style={{ paddingBottom: '7vh' }} className={'img-size'} src={Line_pic} alt="line"></img>
-              </PurpleCard>
-            </div>
+          </div>
+
+          <div>
+            <img
+              src={citysunset}
+              className="w-full shadow-lg rotate-lg-6 elevation-10"
+              style={{ borderRadius: '53% 47% 52% 48% / 36% 41% 59% 64%' }}
+              alt=""
+            />
           </div>
         </div>
       </div>
