@@ -6,6 +6,7 @@ import 'tailwindcss-elevation'
 
 //const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 import useScrollPosition from '@react-hook/window-scroll'
+import CascadiaBackground from 'assets/images/CascadiaBackground.jpg'
 import React, { useEffect, useState } from 'react'
 import { animated } from 'react-spring'
 import { useSpring } from 'react-spring/web'
@@ -44,12 +45,12 @@ const Headernew = () => {
     <>
       <animated.div hidden={hidden} style={props} className={'animate__animated animate__bounce'}>
         <div>
-          <section className="relative top-38">
+          <section className="relative top-38 transform translate-y-16">
             <div
               className="relative overflow-hidden bg-no-repeat bg-cover bg-[url('https://mdbootstrap.com/img/new/textures/full/142.jpg')] bg-center h-auto w-screen"
               style={{
                 backgroundPosition: '50%',
-                backgroundImage: `url(${imageurl})`,
+                backgroundImage: `url(${CascadiaBackground})`,
                 height: '600px',
               }}
             ></div>
