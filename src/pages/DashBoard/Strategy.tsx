@@ -50,7 +50,9 @@ const StratSection = () => {
     <animated.div hidden={hidden} style={props} className={'animate__animated animate__fadeInUp'}>
       {' '}
       <div className="flex-row w-screen text-center justify-center">
-        <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'calc(3 * (0.75vw + 0.75vh))' }}>Our Services</h1>
+        <h1 style={{ fontFamily: 'Merriweather, serif', fontSize: 'calc(3 * (0.95vw + 0.95vh))', color: '#ffffff' }}>
+          Our Services
+        </h1>
       </div>
       <p></p>
       <p></p>
@@ -74,8 +76,7 @@ const StratSection = () => {
         Our team has combined experience in taking applications from idea to a finished masterpiece. From designing the
         intial concept, to deploying to your production environment we have done it. Our specialization is in Web3
         projects, our preferred front-end language ReactJS is used throughout the industry so your app can scale. We
-        also pride ourselves on wirting innovative smart contracts to suit your unique business idea. Check out examples
-        of our past work below!
+        also pride ourselves on wirting innovative smart contracts to suit your unique business idea.
       </p>
       <p></p>
       <div className="container my-24 px-6 mx-auto"></div>
@@ -87,26 +88,26 @@ const StratSection = () => {
               className=" elevation-15 relative block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 z-1"
               style={{ backgroundColor: 'hsla(0, 0%, 100%, 0.55)', backdropFilter: 'blur(30px)' }}
             >
-              <h2 className="text-3xl font-bold mb-4 display-5">Why us?</h2>
-              <p className="text-black mb-12">
+              <h2 className="text-4xl font-bold mb-4 display-5">Why us?</h2>
+              <p className="text-black text-lg mb-12">
                 We work very hard to earn our clients respect and show the world what limits we can push. If you want
                 driven and smart people in your corner, you want us on your team.
               </p>
 
               <div className="grid md:grid-cols-3 gap-x-6">
                 <div className="mb-12 md:mb-0">
-                  <h2 className="text-3xl font-bold text-dark mb-4">Frontend</h2>
-                  <h5 className="text-lg font-medium text-gray-500 mb-0">React.js</h5>
+                  <h2 className="text-4xl font-bold text-dark mb-4">Frontend</h2>
+                  <h5 className="text-xl font-medium text-gray-900 mb-0">React.js and TailwindCSS</h5>
                 </div>
 
                 <div className="mb-12 md:mb-0">
-                  <h2 className="text-3xl font-bold text-dark mb-4">Backend</h2>
-                  <h5 className="text-lg font-medium text-gray-500 mb-0">Node.js or Python</h5>
+                  <h2 className="text-4xl font-bold text-dark mb-4">Backend</h2>
+                  <h5 className="text-xl font-medium text-gray-900 mb-0">Node.js or Python</h5>
                 </div>
 
                 <div className="">
-                  <h2 className="text-3xl font-bold text-dark mb-4">Smart Contracts</h2>
-                  <h5 className="text-lg font-medium text-gray-500 mb-0">Solidity</h5>
+                  <h2 className="text-4xl font-bold text-dark mb-4">Smart Contracts</h2>
+                  <h5 className="text-xl font-medium text-gray-900 mb-0">Solidity</h5>
                 </div>
               </div>
             </div>
@@ -115,7 +116,7 @@ const StratSection = () => {
           <div>
             <img
               src={citysunset}
-              className="w-full shadow-lg rotate-lg-6 elevation-10"
+              className="w-full shadow-lg rotate-lg-6 elevation-10 blur-2xl"
               style={{ borderRadius: '53% 47% 52% 48% / 36% 41% 59% 64%' }}
               alt=""
             />

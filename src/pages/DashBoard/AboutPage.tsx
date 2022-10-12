@@ -38,7 +38,9 @@ const AboutSection = () => {
         <div className={'flexbox-vertical-container-max-width'}>
           <div className={'contentcenter'}>
             {' '}
-            <h1 style={{ fontSize: 'calc(3 * (0.8vw + 0.8vh))' }} className={'whitetext'}>
+            <h1
+              style={{ fontFamily: 'Merriweather, serif', fontSize: 'calc(3 * (0.95vw + 0.95vh))', color: '#ffffff' }}
+            >
               {' '}
               About Us{' '}
             </h1>

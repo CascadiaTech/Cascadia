@@ -72,7 +72,7 @@ const HeaderElement = styled.div`
 
 const HeaderLinks = styled(Row)`
   justify-self: center;
-  background-color: transparent;
+  background-color: rgba(34, 34, 34, 0.904);
   width: 100vw;
   max-width: 100vw;
   padding: 15px;
@@ -119,8 +119,10 @@ const AccountElement = styled.div<{ active: boolean }>`
   font-family: 'Montserrat', sans-serif;
   width: 80%;
   height: 40px;
+  :hover,
   :focus {
-    border: 10px solid blue;
+    border: 2px solid rgba(138, 255, 222, 0.992);
+    text-shadow: 0px 0px 8px rgba(231,231,231,0.88);
   }
 `
 
@@ -133,7 +135,7 @@ const UniIcon = styled.div`
   transition: transform 0.3s ease;
   margin-right: 50px;
   :hover {
-    transform: rotate(-5deg);
+    transform: rotate(-50deg);
   }
   position: relative;
 `

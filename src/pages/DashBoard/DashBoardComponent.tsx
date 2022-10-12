@@ -1,6 +1,7 @@
 import './styles.css'
 
 import DualCardComponent from 'components/DualCards/DualCardComponent'
+import FAQComponent from 'components/FAQ/FAQComponent'
 import FooterComponent from 'components/Footer/FooterComponent'
 
 //import { SupportedChainId } from 'constants/chains'
@@ -21,7 +22,9 @@ export default function DashBoardComponent() {
       <StratSection></StratSection>
       <AboutSection></AboutSection>
       <DualCardComponent></DualCardComponent>
-      <p style={{ paddingTop: '50px', marginTop: '50px', marginBottom: '50px' }}></p>
+      <p style={{ paddingTop: '2vh', marginTop: '2vh', marginBottom: '2vh' }}></p>
+      <FAQComponent></FAQComponent>
+      <p style={{ paddingTop: '2vh', marginTop: '2vh', marginBottom: '2vh' }}></p>
       <TransparentCard></TransparentCard>
       <FooterComponent></FooterComponent>
     </>

@@ -47,7 +47,7 @@ const Headernew = () => {
         <div>
           <section className="relative top-38 transform translate-y-16">
             <div
-              className="relative overflow-hidden bg-no-repeat bg-cover bg-[url('https://mdbootstrap.com/img/new/textures/full/142.jpg')] bg-center h-auto w-screen"
+              className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-auto w-screen"
               style={{
                 backgroundPosition: '50%',
                 backgroundImage: `url(${CascadiaBackground})`,
@@ -62,6 +62,8 @@ const Headernew = () => {
                   style={{
                     marginTop: '-170px',
                     backgroundColor: 'hsla(0, 0%, 100%, 0.7)',
+                    maxHeight: '35vh',
+                    minHeight: '35vh',
                     backdropFilter: 'blur(30px)',
                   }}
                 >
@@ -91,7 +93,7 @@ const Headernew = () => {
                     className="inline-block px-7 py-3 text-white font-medium text-sm leading-snug bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
-                    href="#!"
+                    href="https://github.com/CascadiaTech"
                     role="button"
                   >
                     Learn more
