@@ -72,7 +72,7 @@ const HeaderElement = styled.div`
 
 const HeaderLinks = styled(Row)`
   justify-self: center;
-  background-color: rgba(34, 34, 34, 0.904);
+  background-color: transparent;
   width: 100vw;
   max-width: 100vw;
   padding: 15px;
@@ -190,15 +190,11 @@ export default function Header() {
         <UniIcon>
           <img src={CascadiaTech} alt="logo" width="70px" height="70%"></img>
         </UniIcon>
-        <HeaderLinks>
-          <StyledNavLink id={'/Dashboard'} to={'/Dashboard'}>
-            <Trans> Home </Trans>
-          </StyledNavLink>
-        </HeaderLinks>
         <HeaderControls>
           <HeaderElement>
             <NetworkSelector />
           </HeaderElement>
+          <p style={{ marginBottom: '10vh' }}></p>
           <HeaderElement>
             <AccountElement active={!!account}>
               {account && userEthBalance ? (

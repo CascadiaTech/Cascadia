@@ -45,26 +45,25 @@ const Headernew = () => {
     <>
       <animated.div hidden={hidden} style={props} className={'animate__animated animate__bounce'}>
         <div>
-          <section className="relative top-38 transform translate-y-16">
+          <section className="relative top-38 transform translate-y-10">
             <div
               className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-auto w-screen z-1"
               style={{
                 backgroundPosition: '50%',
-                position: 'relative',
                 backgroundImage: `url(${CascadiaBackground})`,
                 height: '600px',
               }}
             ></div>
 
-            <div className="container mx-auto px-6 md:px-12 xl:px-32">
+            <div className="container mx-auto px-6 md:px-12 md:py-10 xl:px-32">
               <div className="text-center text-gray-800">
                 <div
                   className="relative block rounded-lg shadow-lg px-6 py-12 md:py-16 md:px-12 elevation-10 z-2"
                   style={{
                     marginTop: '-170px',
                     backgroundColor: 'hsla(0, 0%, 100%, 0.7)',
-                    maxHeight: '35vh',
-                    minHeight: '35vh',
+                    maxHeight: '45vh',
+                    minHeight: '45vh',
                     backdropFilter: 'blur(30px)',
                   }}
                 >
