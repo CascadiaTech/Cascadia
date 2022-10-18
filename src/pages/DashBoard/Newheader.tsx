@@ -47,9 +47,10 @@ const Headernew = () => {
         <div>
           <section className="relative top-38 transform translate-y-16">
             <div
-              className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-auto w-screen"
+              className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-auto w-screen z-1"
               style={{
                 backgroundPosition: '50%',
+                position: 'relative',
                 backgroundImage: `url(${CascadiaBackground})`,
                 height: '600px',
               }}
@@ -58,7 +59,7 @@ const Headernew = () => {
             <div className="container mx-auto px-6 md:px-12 xl:px-32">
               <div className="text-center text-gray-800">
                 <div
-                  className="block rounded-lg shadow-lg px-6 py-12 md:py-16 md:px-12 elevation-10"
+                  className="relative block rounded-lg shadow-lg px-6 py-12 md:py-16 md:px-12 elevation-10 z-2"
                   style={{
                     marginTop: '-170px',
                     backgroundColor: 'hsla(0, 0%, 100%, 0.7)',
