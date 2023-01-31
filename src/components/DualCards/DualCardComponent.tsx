@@ -56,8 +56,8 @@ export default function DualCardComponent() {
                 <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Development Expertise</h5>
                   <p className="text-gray-700 text-base mb-4">
-                    Our portfolio shows our understanding of the concepts that will make your web applcition stand out
-                    against the rest. Come view our Github profile to see what past projects we have programmed
+                    Our portfolio demonstrates our understanding of the concepts that will set your web application
+                    apart from others. Come see our Github profile to see what past projects we have programmed.
                   </p>
                   <button
                     type="button"
@@ -87,10 +87,10 @@ export default function DualCardComponent() {
                 <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Business Development</h5>
                   <p className="text-gray-700 text-base mb-4">
-                    When you work with our team you do not just get our development expertise. As veterans in the
-                    cryptocurrency industry we help our clients acheive success by optimizing the protocol deisgn to fit
-                    the clients buisness needs and offering technical support as they work to use technology to enhance
-                    their buisness.
+                    When you work with our team, you benefit from more than just our development expertise. As veterans
+                    in the Cryptocurrency industry, we help our clients achieve success by optimizing the protocol
+                    design to fit the clients business needs and offering technical support as they work to use
+                    technology to enhance their business.
                   </p>
                   <button
                     type="button"
@@ -117,9 +117,9 @@ export default function DualCardComponent() {
                 <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Family owned</h5>
                   <p className="text-gray-700 text-base mb-4">
-                    What started with a family in canada who wanted to build a web3 development services company has
-                    grown to be a company with a remote team of diverse backgrounds. If you have talent in web3
-                    development or related services we would love to hear from you!
+                    What began with a family in Canada wanting to build a Web3 development services business became a
+                    business with a remote team of highly experienced developers with diverse backgrounds. If you have
+                    talent in Web3 development or related services, we would love to hear from you!
                   </p>
                   <button
                     type="button"

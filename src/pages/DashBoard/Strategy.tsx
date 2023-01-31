@@ -8,18 +8,8 @@ import useScrollPosition from '@react-hook/window-scroll'
 import React, { useEffect, useState } from 'react'
 import { animated } from 'react-spring'
 import { useSpring } from 'react-spring/web'
-import styled from 'styled-components/macro'
 
 import citysunset from '../../assets/images/citysunset.jpeg'
-
-const StyledHeader = styled.text`
-  fontSize: 'calc(3 * (0.75vw + 0.75vh))'
-  color: #ffffff;
-  justify-content: center;
-  fontFamily: 'Montserrat, sans-serif'
-  font-weight: bold;
-  text-align: center;
-`
 
 const StratSection = () => {
   const [hidden, sethidden] = useState(true)
@@ -74,9 +64,9 @@ const StratSection = () => {
         }}
       >
         Our team has combined experience in taking applications from idea to a finished masterpiece. From designing the
-        intial concept, to deploying to your production environment we have done it. Our specialization is in Web3
+        initial concept, to deploying to your production environment, we have done it. Our specialization is in Web3
         projects, our preferred front-end language ReactJS is used throughout the industry so your app can scale. We
-        also pride ourselves on wirting innovative smart contracts to suit your unique business idea.
+        also pride ourselves on writing innovative smart contracts to suit your unique business idea.
       </p>
       <p></p>
       <div className="container my-24 px-6 mx-auto"></div>
@@ -91,7 +81,7 @@ const StratSection = () => {
               <h2 className="text-4xl font-bold mb-4 display-5">Why us?</h2>
               <p className="text-black text-lg mb-12">
                 We work very hard to earn our clients respect and show the world what limits we can push. If you want
-                driven and smart people in your corner, you want us on your team.
+                work with experienced and dedicated people, you want us on your team.
               </p>
 
               <div className="grid md:grid-cols-3 gap-x-6">

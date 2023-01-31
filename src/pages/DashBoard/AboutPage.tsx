@@ -66,12 +66,12 @@ const AboutSection = () => {
               >
                 What started as a passion for web3 and solving problems has turned into an international team of
                 developers seeking to create the next future of finance and consumer spending. We are a team who love to
-                solve hard problems, and to stretch the bounds of what can be done. Web3 is changing the shape of the
-                internet, there is a change in the air of how consumers will spend their money. Consumers spend money to
-                enforce our identities, be it donate to a charity, or buy a baseball jersey these items are purchased to
-                reenforce to ourselves of who we are. With our world becoming increasingly digital, so are our
-                identities. We see NFTs and web3 as a reaction to that. A once in a lifetime oportunity to capitalize on
-                the future is upon us, let us help you capitalize on it like we are.
+                solve hard problems, and to stretch the bounds of what can be done. Web3 changes the form of the
+                Internet, there is a change in the air in the way consumers will spend their money. Consumers spend
+                money to preserve their identity, whether its donating to a charity or purchasing a baseball shirt. Our
+                world is getting increasingly digital, as are our identities. We see NFTs and web3 as a reaction to
+                that. A unique opportunity to capitalize on the future is in our hands, let us help you take advantage
+                of it as we do.
               </p>
             </div>
             <p></p>

@@ -97,8 +97,8 @@ focus:outline-none
               data-bs-parent="#accordionExample"
             >
               <div className="text-gray-50 text-lg py-4 px-5">
-                <strong>We know most of the popular frontend, and backend languages and frameworks.{''} </strong> {''}{' '}
-                For frontend development we are masters at React, Next.js, fetch, javascript, and Tailwindcss, web3.js,
+                <strong>We know most the most popular fontend, and backend languages and frameworks.{''} </strong> {''}{' '}
+                For frontend development we are trained in React, Next.js, fetch, javascript, and Tailwindcss, web3.js,
                 and ethers.js to produce professional and fast web applications. For backend programming we love working
                 with with python, flask or the MERN stack ( MongoDB, Express, Node.js, React) we have also deployed
                 subgraphs indexing smart contract events as viewable on our github

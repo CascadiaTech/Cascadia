@@ -40,7 +40,6 @@ const Headernew = () => {
     Ishidden()
   }, [ScrollY])
 
-  const imageurl = 'https://mdbootstrap.com/img/new/textures/full/142.jpg'
   return (
     <>
       <animated.div hidden={hidden} style={props} className={'animate__animated animate__bounce'}>
